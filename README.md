@@ -1,4 +1,4 @@
-## :rocket: <nlw/> together #6
+## :rocket: NLW Together #6
 
 O NLW é um evento online e gratuito, oferecido pela [Rocketseat](https://rocketseat.com.br/), com duração de uma semana. Durante o evento, diversos conteúdos de programação, com projetos para serem desenvolvidos, são disponibilizados para a comunidade. Todo o conteúdo do evento é divido em diferentes trilhas de aprendizado, cada uma abordando uma tecnologia diferente.
 
@@ -6,7 +6,7 @@ O NLW é um evento online e gratuito, oferecido pela [Rocketseat](https://rocket
 
 Neste projeto, esta sendo desenvolvido uma aplicação back-end da trilha `Node.js`.
 
-O `NLW VALORIZA` é um projeto onde será possível fazer e retruibuir elogios a pessoas. Pode ser aplicado por exemplo em um ambiente de trabalhado, fazendo elogias aos colegas.
+O `NLW VALORIZA` é uma aplicação onde será possível fazer e retrubuir elogios. Pode ser aplicado por exemplo em um ambiente de trabalhado, fazendo elogias aos colegas.
 
 Esse projeto contemplará:
 
@@ -132,22 +132,18 @@ import "./database";
 Dentro de `ormconfig.json`iremos adicionar:
 
 ```json
-{
   "migrations": ["src/database/migrations/*.ts"],
   "cli": {
     "migrationsDir": "src/database/migrations"
   }
-}
 ```
 
 Adicionar o script em `package.json`:
 
 ```json
-{
   "scripts": {
     "typeorm": "ts-node-dev ./node_modules/typeorm/cli.js"
   }
-}
 ```
 
 Instalar `ts-node` globalmente, caso os comandos de criar migration abaixo não funcionarem:
@@ -185,12 +181,10 @@ npm run typeorm migration:revert
 Adicionar o local onde as entidades serão criadas no arquivo `ormconfig.json`:
 
 ```json
-{
   "entities": ["src/entities/*.ts"],
   "cli": {
     "entitiesDir": "src/entities"
   }
-}
 ```
 
 Para criar a entidade:
