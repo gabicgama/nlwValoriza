@@ -1,12 +1,12 @@
 ## :rocket: NLW Together #6
 
-O NLW é um evento online e gratuito, oferecido pela [Rocketseat](https://rocketseat.com.br/), com duração de uma semana. Durante o evento, diversos conteúdos de programação, com projetos para serem desenvolvidos, são disponibilizados para a comunidade. Todo o conteúdo do evento é divido em diferentes trilhas de aprendizado, cada uma abordando uma tecnologia diferente.
+O NLW é um evento online e gratuito, oferecido pela [Rocketseat](https://rocketseat.com.br/), com duração de uma semana. Durante o evento, diversos conteúdos de programação, com projetos para serem desenvolvidos, são disponibilizados para a comunidade. Todo o conteúdo do evento é dividido em diferentes trilhas de aprendizado, cada uma abordando uma tecnologia diferente.
 
 ## :pushpin: Sobre o projeto
 
 Neste projeto, esta sendo desenvolvido uma aplicação back-end da trilha `Node.js`.
 
-O `NLW VALORIZA` é uma aplicação onde será possível fazer e retrubuir elogios. Pode ser aplicado por exemplo em um ambiente de trabalhado, fazendo elogias aos colegas.
+O `NLW VALORIZA` é uma aplicação onde será possível fazer e retribuir elogios. Pode ser aplicado, por exemplo, em um ambiente de trabalho, realizando elogios aos colegas.
 
 Esse projeto contemplará:
 
@@ -20,8 +20,10 @@ Esse projeto contemplará:
 
 ## :zap: Tecnologias utilizadas
 
-- Node.js
--
+- Node
+- Express
+- TypeScript
+- Typeorm
 
 ## :desktop_computer: Configuração do ambiente
 
@@ -35,9 +37,9 @@ Primeiro abra o terminal dentro da pasta de onde o projeto será criado. Em segu
 npm init
 ```
 
-Esse comando vai criar o arquivo `package.json`, que é onde está toda a configuração do projeto, includindo, nome, versão, descrição, scripts a serem executados, licença, etc.
+Esse comando vai criar o arquivo `package.json`, que é onde está toda a configuração do projeto, incluindo, nome, versão, descrição, scripts a serem executados, licença, etc.
 
-Após executar o `npm init`, o npm vai perguntar algumas informações básicas para montar o package.json.
+Após executar o `npm init`, o npm vai perguntar algumas informações básicas para montar o `package.json`.
 
 Mais intruções podem ser contradas nesta [fonte](https://dicasdejavascript.com.br/como-criar-um-projeto-nodejs-com-npm/).
 
@@ -129,7 +131,7 @@ import "./database";
 
 ## Adicionando migrations
 
-Dentro de `ormconfig.json`iremos adicionar:
+Dentro de `ormconfig.json` iremos adicionar:
 
 ```json
   "migrations": ["src/database/migrations/*.ts"],
@@ -170,7 +172,7 @@ Para executar uma migration, utilizar o comando:
 npm run typeorm migration:run
 ```
 
-Para reverter um migration:
+Para reverter uma migration:
 
 ```
 npm run typeorm migration:revert
