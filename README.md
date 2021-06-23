@@ -85,6 +85,7 @@ https://expressjs.com/pt-br/
 ```
 npm i express
 npm i @types/express -D
+npm i express-async-errors
 ```
 
 ### Typeorm + Postgres
