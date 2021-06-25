@@ -24,6 +24,8 @@ Esse projeto contemplará:
 - Express
 - TypeScript
 - Typeorm
+- JWT Authentication
+- BCrypt password hashing
 
 ## :desktop_computer: Configuração do ambiente
 
@@ -207,4 +209,23 @@ Também descomentar a seguinte propriedade e alterar para `false`, para que não
 
 ```json
 "strictPropertyInitialization": false
+```
+
+## Token JWT
+
+https://jwt.io/
+https://www.npmjs.com/package/jsonwebtoken
+
+```
+npm i jsonwebtoken
+npm i @types/jsonwebtoken -D
+```
+
+## BCrypt js
+
+https://www.npmjs.com/package/bcryptjs
+
+```
+npm i bcryptjs
+npm i @types/bcryptjs
 ```
