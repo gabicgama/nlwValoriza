@@ -1,3 +1,13 @@
+<p align="center">
+  <img alt="GitHub language count" src="https://img.shields.io/github/languages/count/gabicgama/nlwvaloriza">
+
+  <img alt="Repository size" src="https://img.shields.io/github/repo-size/gabicgama/nlwvaloriza">
+  
+  <a href="https://github.com/gabicgama/nlwValoriza">
+    <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/gabicgama/nlwvaloriza">
+  </a>
+</p>
+
 ## :rocket: NLW Together #6
 
 O NLW é um evento online e gratuito, oferecido pela [Rocketseat](https://rocketseat.com.br/), com duração de uma semana. Durante o evento, diversos conteúdos de programação, com projetos para serem desenvolvidos, são disponibilizados para a comunidade. Todo o conteúdo do evento é dividido em diferentes trilhas de aprendizado, cada uma abordando uma tecnologia diferente.
@@ -214,6 +224,7 @@ Também descomentar a seguinte propriedade e alterar para `false`, para que não
 ## Token JWT
 
 https://jwt.io/
+
 https://www.npmjs.com/package/jsonwebtoken
 
 ```
