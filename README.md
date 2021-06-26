@@ -223,6 +223,8 @@ Também descomentar a seguinte propriedade e alterar para `false`, para que não
 
 ## Token JWT
 
+Gerar token para autenticar o usuário do sistema.
+
 https://jwt.io/
 
 https://www.npmjs.com/package/jsonwebtoken
@@ -234,9 +236,21 @@ npm i @types/jsonwebtoken -D
 
 ## BCrypt js
 
+Para criptografar senhas.
+
 https://www.npmjs.com/package/bcryptjs
 
 ```
 npm i bcryptjs
 npm i @types/bcryptjs
+```
+
+## Class-transformer
+
+Biblioteca que nos permiter sobrescrever atributos das entidades que serão exibidos. Dessa forma é possível "esconder" informações críticas.
+
+https://github.com/typestack/class-transformer
+
+```
+npm i class-transformer
 ```
